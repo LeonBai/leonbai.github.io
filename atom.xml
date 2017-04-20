@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leonbai.github.io/"/>
-  <updated>2017-02-11T01:36:41.000Z</updated>
+  <updated>2017-04-17T12:39:24.000Z</updated>
   <id>https://leonbai.github.io/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Retro-for-Intro</title>
+    <link href="https://leonbai.github.io/2017/04/17/Retro-for-Intro/"/>
+    <id>https://leonbai.github.io/2017/04/17/Retro-for-Intro/</id>
+    <published>2017-04-17T12:36:12.000Z</published>
+    <updated>2017-04-17T12:39:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Retro-for-Intro"><a href="#Retro-for-Intro" class="headerlink" title="Retro for Intro"></a>Retro for Intro</h1><p>Unlike most of ‘tech’ or academic blog, which jumps right to the topic matters. I intent to favour the seemingly dry ‘academic’ material with spices of stories, personal insights, even jokes and critics. Inline with this purpose, I will render my view on machine cognition, human cognition and the brief of Turing’s machine. As the title suggested, this is an introduction article for future retrospect. </p>
+<p>To begin my first blog, I shall paying my full respect to Alan Turing with quoting his famous syolgism:</p>
+<p>“””</p>
+<p>Turing believes machines think.</p>
+<p>Turing lies with men.</p>
+<p>Therefore machines do not think.</p>
+<p>― Alan Turing</p>
+<p>“””</p>
+<h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>To settle the discussion of “Can machine think or not ?” may not be possible during my life, it has been upscaled from a pure thought-provoking question to our ultimate search for the existence. The expression of such uncertainty entangles with our dominance of logical thinking and creation of ample ‘civilised machines, such as computers, bots, eventually breeds our unique disctonimoy views of machine cognition, i.e., to perceive it as the product of our vivo’s intellectual embodiment or another dice that is rolled by God. Contrary to others, I, who is amazed by the intricacy of neuroscience in vivo and is also thrilled by the capability of machine learning algorithms arrive the third answer: neither bits nor nits will eventually achieve the ultimate intelligence. </p>
+<h2 id="Cognition-in-Vivo"><a href="#Cognition-in-Vivo" class="headerlink" title="Cognition in Vivo"></a>Cognition in Vivo</h2><p>Undoubtedly, our human being is deceived by our misconception of our innate intellectual superiority via our countless ‘inventions’. Among these,  Languages are created to express thought, logic and computational operations are designed to demystifier the world. Our privileged dignity as human being is then constantly being magnify by the foregoing masterpieces of our creations. The admiration of our intellectual ability reaches the apex, as scientists clarify the recognition of all our creativity and originality are sourced from the glue like ten pound half-hemisphere shaped matter. </p>
+<p>We are hyper about the capacity of our brain, amazed by how this little matter take control over our planet. I, personally do not disregard this stream of hyper and admiration. In fact, for quite long period of time, I held a whole-heartedly belief that the ultimate intelligence shall only emerge when our human races evolve to reach the full functionality. The gold key for unfreeing the constrains that impose on our pursing to maximal functionality is the crystallised consciousness of our brain. As a graduate student who envisioned once that the huge promise that neuroscience would bring us toward full functionality, now totally ditched this thought into the toilet. Numerous invented non-invasive techniques, such as EEG, fMRI, PET-scan, and et ac, belies the fact that these visualisation tools made very little advancements in tackling the issue of reverse and inverse problems, which are lingered in the field of neuroscience since its born. </p>
+<p>Unless the minute details of how brain works are unfolded as plain stories, I do have limited hopes on sudden advancement of neuroscience. However, as an ex-neuroscience student, who is still trilled by new findings in this domain, is willing to embrace more thoughts exchange with the ‘iron’ side of the community.</p>
+<h2 id="Cognition-in-Machine"><a href="#Cognition-in-Machine" class="headerlink" title="Cognition in Machine"></a>Cognition in Machine</h2><p>Since the rise of connectionists, or even at early era of ‘CAM’ world, there is a strong belief that saying our human beings actions and minds can be imitated and stimulated by automata. The ancestor of nowadays so called ‘Machine Learning ‘ and ‘Deep Learning ‘ is nonetheless can be traced to those middle or dark age clock-men, which believed the regularity and superior functionality can be achieved through perfectly designed automata via predefined logics and rules. That is to say, as an active machine learning researcher that is observing the amazing movement in pushing this field toward the omnipresence, surprisingly find that all our research fruits tasted and enjoyed are merely refurnished old concept of automata with more properly and formally defined rules. Algorithms do save us from the slavery labor works, and perhaps offer us a faked hope of Strong AI is down on the road. Set by rules, framed by deterministic logics, warped with sophisticated math expressions, it does not revolutionise the fact that all the so called machine intelligence is still controlled and untapped with a slight association with creativity. We can design ‘programmable scripts’, build self-serving chatting bots, diagnose the disease with excellent algorithm tic performance. I, personally never deny the uses of such creations to facilitate our mundane life.  But as a researcher in this field, there is an inner sound that keeps echoing and saying unless the algorithms are totally out of our control, we are not settled for finding the ultimate machine intelligence.’</p>
+<h1 id="Hopes-amp-Dreams"><a href="#Hopes-amp-Dreams" class="headerlink" title="Hopes &amp; Dreams"></a>Hopes &amp; Dreams</h1><p>By all means, I have to make a clear claim that I am not a pessimist that goes against majority on the topic of AI. I do have conditional belief that if we have the key to decode our human brain not in the superficial way, and enabling algorithms to get arise their own version of evolution, the ultimate intelligence that embodies on either machine and human has no ceiling to reach. For all readers that happen to read this page, I encourage everyone to break all the barriers that constrains your thinking and discourage everyone, especially researchers on paying over attention towards refinements rather other revolutionary. </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Retro-for-Intro&quot;&gt;&lt;a href=&quot;#Retro-for-Intro&quot; class=&quot;headerlink&quot; title=&quot;Retro for Intro&quot;&gt;&lt;/a&gt;Retro for Intro&lt;/h1&gt;&lt;p&gt;Unlike most of ‘te
+    
+    </summary>
+    
+    
+      <category term="Self-Retrospect" scheme="https://leonbai.github.io/tags/Self-Retrospect/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
