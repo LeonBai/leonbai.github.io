@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://leonbai.github.io/"/>
-  <updated>2017-04-17T12:39:24.000Z</updated>
+  <updated>2017-05-22T11:07:14.000Z</updated>
   <id>https://leonbai.github.io/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://leonbai.github.io/2017/05/22/tutorial-1/"/>
+    <id>https://leonbai.github.io/2017/05/22/tutorial-1/</id>
+    <published>2017-05-22T10:57:42.000Z</published>
+    <updated>2017-05-22T11:07:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<p>title: Machine Learning &amp; Probabilistic Model Tutorial I<br>date: 2017-05-22 19:57:42<br>tags:</p>
+<pre><code>- Machine Learning
+- Statistic Learning
+</code></pre><p>Category:<br>    -Tutorials</p>
+<hr>
+<h1 id="Machine-Learning-amp-Probabilistic-Model"><a href="#Machine-Learning-amp-Probabilistic-Model" class="headerlink" title="Machine Learning &amp; Probabilistic Model"></a>Machine Learning &amp; Probabilistic Model</h1><p>In this series of tutorial, we will begin our inquisition on conventional machine learning models and algorithms. Then, we will dive deep into applying probabilistic models in classical and modern machine learning issues. Hopeful, at the end of this tutorial, we will at least spark your thoughts on thinking machine learning problems under the framework of statistical learning. </p>
+<h2 id="Tutorial-I-Clarify-on-Notation-and-Several-Important-Concepts"><a href="#Tutorial-I-Clarify-on-Notation-and-Several-Important-Concepts" class="headerlink" title="Tutorial I: Clarify on Notation and Several Important Concepts"></a>Tutorial I: Clarify on Notation and Several Important Concepts</h2><p><strong>Q: Why we need Notation Guidance ?</strong></p>
+<p><strong>A: The confusion, which is incurred by the customs that are obeyed in different communities, e.g., in artificial neural network community, learnable parameters(weights) denote as $ { w }$, but in probabilistic modeling, statisticians term them as $\theta$. Hence, we are obliged to being consistent to continue our discussion.</strong></p>
+<p><strong>Q: Why we insist on the term ‘feature learning’ rather than conventional ‘machine learning’?</strong></p>
+<p><strong>A: There are numerous types of machine learning interpretation, e.g., ranging from pure optimisation perspective to differential geometrics viewpoint. Personally speaking, I am a big fan of feature learning in line with most of connectionists’ view, i.e., they hold the belief that our knowledge is represented in distributed fashion, can be best learned in sparse form.</strong></p>
+<h3 id="Random-Variables"><a href="#Random-Variables" class="headerlink" title="Random Variables"></a>Random Variables</h3><p>${x}$: variables, observed variables or learnable features, can be continuous and discrete. When $x \in \Re^n $, for $j<em>+ = 1, 2,…,k$, letting the distribution of $x$ to be $Q$, i.e., $p(x = j) = P </em>{x \sim Q}$.<br>Occasionally, we also call it marginal distribution of $p(y|x)$, due to $p(y) = \int p(y|x)p(x) dx$. Because this is input/observation distribution, there is no need for modeling its prior $p(x)$. </p>
+<p>${z}$: random variable, latent variable, we can model the prior distribution of $z$ as Normal/ Student-T/Laplace/Possion Distribution. This consistue the key ingredients in formulating latent variable model and other graphical models </p>
+<p>$(x,z)$: Joint Distribution of learnable variable(observation) and latent variable, major query variable in latent variable model </p>
+<p>$(x|z)$: likelihood of latent variable; Probability of observed variables when given latent variables; Conditional Likelihood; in context of auto encoder, this is named as “inference network”, i.e., we are making inferences based on encoded variable $z$</p>
+<p>$(z|x)$: posterior distribution of z; generative process of latent variable $z$ via $x$; in context of auto encoder, this is also termed as “generative network”.</p>
+<p>${y}$: outcome(ML); teacher signal(ML); labels(ML); classes(ST), can be either discrete and continuous, whereas the former in classification and later in regression and $y \in \Re$. A more radical thinking is $y$, $x$ are merely parameterisation of any variables, thereof   </p>
+<p>$(x|y)$: class likelihood, used in generative model and learning; class conditional density; interpreted as: Given a class or a label, it models the distribution of objects, i.e., $pdf$ that have that labels. Note here, we can substitute the teacher signal y as z, i.e., a random variable to micmic the label in latent variable model(LVM), used in unsupervised issue.</p>
+<p>$(y|x)$:Given an object, to determine the probability of a certain class label is denoted.</p>
+<p>$ D $: Dataset; Observation, dataset can be insist of $ {x, y}$ or ${x}$.</p>
+<p><em>Table 1. Summary of Some Commonly Used Distribution</em><br><img src="/Users/lb/blog/hexo/source/images/distribution.png" alt="1"></p>
+<h3 id="Parametrisation"><a href="#Parametrisation" class="headerlink" title="Parametrisation"></a>Parametrisation</h3><p>Parameters &amp; Model Parametrization: If we define a parametric model, there are infinite ways to parameterize our model. Some conventional way is to denote $\theta$ as parameter; ${w, b}$ as weight and biases in adaptive basis network and support vector machine modeling. If the Generalized Linear Model(GLM) is applied in context, you may use $\eta$ to express the $pdf$ of designated distribution.The choice of parametrization is partially determined by the requirement of sufficient statistics in your model, and the level of computational/derivation complexity, e.g., for yielding an efficient approximation to integral form under generative model, it is customary to introduce an auxiliary variable.</p>
+<h3 id="Descriptive-Statistics"><a href="#Descriptive-Statistics" class="headerlink" title="Descriptive Statistics"></a>Descriptive Statistics</h3><p>Discriminative Approach: Model $(y|x)$ directly without assuming the prior distribution of the labels, fast and more generalized applications over generative approach</p>
+<p>Generative Approach: Model $(y|x)$ via $(y|x) \propto (x|y) * (y)$, restricted usage due to the pre-defined class prior and computational complexity, but more advanced implications, e.g., bayesian learning, and etc. </p>
+<p>Mean/Expectation: For one random variable $z$ and its sample distribution is $Q$, its mean is equivalent to $\mathbb{E}_{z\sim Q} = \mu(z) $.</p>
+<p>Variance: The measure of the spread of ones’ distribution, i.e., $var[X] = \mathbb{E}[(X-u)^2]$</p>
+<p>Covariance: In multi-variant distribution, it is used to measure the relation among variables, i.e., the magnitude of one variable change on the other. E.g., $cov[X, Y] = \mathbb{E}[(X- \mathbb{E[X]})(Y - \mathbb{E[Y]})]$</p>
+<h3 id="Inductive-Statistic"><a href="#Inductive-Statistic" class="headerlink" title="Inductive Statistic"></a>Inductive Statistic</h3><p>Prior Distribution: The pre-defined belief about the distribution of certain variables, e.g., $ p(z) $ for ${z}$</p>
+<p>Posterior Distribution: Given the observation, and the assumed / obtained prior belief, i.e., $pdf$ of  prior distribution. </p>
+<h3 id="Planetary-Description-of-Graphic-Model"><a href="#Planetary-Description-of-Graphic-Model" class="headerlink" title="Planetary Description of Graphic Model"></a>Planetary Description of Graphic Model</h3><p>When inferring parameters from data, we often assume the data is iid. For convenience, we adopt the plate notation in expressing the graphic model. </p>
+<p>E.g., <em>Figure 1.</em> <img src="/Users/lb/blog/hexo/source/images/plate_notation.jpg" alt="1"></p>
+<p>In <em>Figure 1.</em>, it shows that data points $x_i$ are conditionally dependent given a random/latent variable $ z_n $, and conditionally independent given parameters $\theta $. More specificlly, if we have $D $- dimensional data $ { x_n } \in \Re^{(N * D) }$. The latent variables $z_n $ for each data point $ x_n$ (local variables). Joint Distribution as following:</p>
+<ul>
+<li>If we use the mixture and hierarchical model: </li>
+</ul>
+<p>$ p(x, z, \theta) = p(\theta) \prod^{N}_{n= 1}p(z_n | \theta) p(x_n| z_n, \theta) $</p>
+<ul>
+<li>If Generative Model is modeled, we use $ \theta$ to model the latent variable $ z_n$:</li>
+</ul>
+<p>$ z_n \sim Normal(z_n | 0, I) $</p>
+<p>$ x_n | z_n \sim Bernoulli(x_n | p = NN(z_n; \theta)) $</p>
+<h3 id="Several-Common-Rules-in-Statistical-Learning"><a href="#Several-Common-Rules-in-Statistical-Learning" class="headerlink" title="Several Common Rules in Statistical Learning"></a>Several Common Rules in Statistical Learning</h3><p>Chain Rule: $p(X_{1:D}) = p(X_1) p(X_2|X_1)p(X_3|X_2,X_1)…p(X<em>D|X(</em>{1:D-1})$</p>
+<p>Bayesian’ Rule: $ p(X = x| Y= y) = \frac{p(X = x, Y = y)}{p(Y = y)}  = \frac {p(X = x)p(Y = y| X = x)}{\int_x p(X = x’)p(Y = y| X= x’)}$</p>
+<p>Linear Transformations of The Distribution of Random Variables:</p>
+<ol>
+<li><p>Suppose $f()$ is a linear function, i.e., $y = f(x) = Ax+b$ and $x \sim p()$, then $\mathbb{E[y] = Au + b} $; $cov[y] = cov[Ax+ b]=A\Sigma A^T $, where $ \Sigma = cov[x]$</p>
+</li>
+<li><p>Suppose $x \sim p(x)$ and $s \sim p(s)$, $x = As$, where A is the mixing matrix, and $A \in \Re^n$, we let $W = A^{-1}$ to be the unmixing matrix. $p(x) = \prod^{n}_{I=1} p_s(w_i^Tx)  \cdot |w|$</p>
+</li>
+</ol>
+<h3 id="Conclusion-Remark"><a href="#Conclusion-Remark" class="headerlink" title="Conclusion Remark"></a>Conclusion Remark</h3><p>In this series of tutorial, the detailed derivation of the designated formulas and <em>proofs</em> will not demonstrated.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;title: Machine Learning &amp;amp; Probabilistic Model Tutorial I&lt;br&gt;date: 2017-05-22 19:57:42&lt;br&gt;tags:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Machine Learning
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Retro-for-Intro</title>
